@@ -1,8 +1,8 @@
 function sortEmployees(employees, attribute) {
     return employees.sort((a, b) => {
-        if (a[attribute] < b[attribute]) return -1;
-        if (a[attribute] > b[attribute]) return 1;
-        return 0;
+        if (a[attribute] < b[attribute]) 
+            return -1;
+       
     });
 }
 const employees = [
@@ -12,5 +12,4 @@ const employees = [
     { name: "David", age: 35, salary: 65000 }
 ];
 console.log(sortEmployees(employees, "age"));
-console.log(sortEmployees(employees, "salary"));
 
